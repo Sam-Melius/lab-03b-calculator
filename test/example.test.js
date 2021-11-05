@@ -1,16 +1,17 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
+import { add } from '../math-utils.js';
 
 const test = QUnit.test;
 
-test('time to test a function', (expect) => {
+test('add() should take in 1 and 1 and return 2', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = true;
+    const expected = 2;
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = true;
+    const actual = add(1, 1);
 
     //Expect
     // Make assertions about what is expected versus the actual result
